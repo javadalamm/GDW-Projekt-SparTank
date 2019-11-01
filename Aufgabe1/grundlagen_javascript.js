@@ -41,10 +41,6 @@ console.log("Anzahl der aktuellen Bewertungen:" , aktuelleAnzahlBewertungen);
 console.log("Sterne insgesamt:" , gespeicherteBewertungen);
 console.log("");
 
-/* Was macht Javascript, wenn Sie eine der Variablen  einen anderen Typ zuweisen?
-... */
-
-
 //Aufgabe 3) Bewertung über die Konsole
 console.log("Aufgabe 3.");
 
