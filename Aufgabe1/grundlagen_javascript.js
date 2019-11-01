@@ -3,9 +3,11 @@
 // Ausgabe auf der Konsole
 console.log("Aufgabe 1.");
 console.log("");
-console.log("Ich heiße Tugce");
+console.log("Ich heiße Tugce Atay");
+console.log("Ich heiße Javad Alamdar");
+console.log("Ich heiße Hilal Karatay");
 
-Console.log(""); // Leere Zeile für Gute Übersicht
+//Console.log(""); // Leere Zeile für Gute Übersicht
 
 //Aufgabe 2)
 console.log("Aufgabe 2.");
