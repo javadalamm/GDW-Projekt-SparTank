@@ -4,7 +4,7 @@ GDW_Projekt
 - Projektidee ist im Issue hochgeladen
 - Aufgabenblatt 1 wurde vollständig hochgeladen
 - Domänenmodell überlegung hochgeladen
--Projektdokumentation im Wiki
+- Projektdokumentation im Wiki
 
 # Muss erledigt werden
 - Lernplan hochladen
