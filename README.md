@@ -1,8 +1,13 @@
 GDW_Projekt
 
-# Getting started
-To get the Node server running locally:
-- Clone this repository
-- `cd Aufgabe1`
-- `node grundlagen_javascript.js` to start the local server
-- http://127.0.0.1:5500/index.html
+# Erledigte Aufgaben
+- Projektidee ist im Issue hochgeladen
+- Aufgabenblatt 1 wurde vollständig hochgeladen
+- Domänenmodell überlegung hochgeladen
+
+# Muss erledigt werden
+- Lernplan hochladen
+- Aufgabenblatt 2 erledigen 
+
+# Deadline Termin 7.11
+- jeder muss ein 3 minuten Video drehen, dies muss bis Mittwoch Abend erfolgen. 
