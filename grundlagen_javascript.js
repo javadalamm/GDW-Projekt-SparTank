@@ -1,18 +1,23 @@
+// AUFGABENBLATT 1
+console.log("Aufgabenblatt 1");
+console.log("");
+
 // Aufgabe 1
 console.log("Aufgabe 1");
 console.log("Ich heiße Tugce Atay.");
 console.log(""); // Leerer Absatz
 
 // Aufgabe 2
-// Variablen deklarieren
 console.log("Aufagbe 2");
-const max_sterne = 5;
-var aktuelle_anzahl_bewertung = 50;
-var gespeicherte_bewertung = 250; // jeder hat 5 Sterne abgegeben
+
+// Variablen deklarieren
+const max_sterne = 5; // nur 5 Sterne Bewertung möglich
+var aktuelle_anzahl_bewertung = 5; // 50 Personnen haben an der Bewertung teilgenommen
+var gespeicherte_bewertung = 25; // jeder hat 5 Sterne abgegeben
 
 // Ausgabe auf der Konsole
-console.log("Dies ist eine Bewertung");
-console.log("Maximale Sterne: ", max_sterne);
+console.log("Dies ist eine Bewertung!");
+console.log("Maximale Bewertung mit Sternen: ", max_sterne);
 console.log("Anzahl der Bewertungen: ", aktuelle_anzahl_bewertung);
 console.log("Sterne insgesamt: ", gespeicherte_bewertung);
 console.log("");
@@ -27,80 +32,79 @@ Was passiert,  wenn  Sie  ihrer  Konstante,  nachdem  Sie  diese  deklariert  ha
 console.log("Es kommt eine neue Bewertung hinzu. Dadurch Verändern sich die vorherigen Werte");
 
 //Variablen überschreiben
-aktuelle_anzahl_bewertung= 51; // + eine neue Bewertung von einer Person
-gespeicherte_bewertung= 251; //mit einem Stern bewertet
+// max_sterne = 6; kann man nicht überschreiben, da es eine Konstante ist
+aktuelle_anzahl_bewertung= 6; // + eine neue Bewertung von einer Person
+gespeicherte_bewertung= 26; //mit einem Stern bewertet
 
 // Ausgabe der Veränderung auf der Konsole
 console.log("Anzahl der aktuellen Bewertungen: ", aktuelle_anzahl_bewertung);
 console.log("Sterne insgesamt: ", gespeicherte_bewertung);
 console.log("");
 
-/*
+
 // Aufgabe 3
 console.log("Aufagbe 3");
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-function prompt(question, callback) {
-    var stdin = process.stdin,
-        stdout = process.stdout;
-
-    stdin.resume();
-    stdout.write(question);
-
-    stdin.once('data', function (data) {
-        callback(data.toString().trim());
-    });
-}
-
-prompt('Bitte geben Sie eine Bewertung ein: ', function (input) {
-    if (input > max_sterne) {
-        // const beachten, max 5 Sterne
-        console.log("Achtung maximale Bewertung sind 5 Sterne!");
+rl.question("Bitte bewerten Sie die App: ", function (answer) {
+    if (answer > max_sterne || answer < 0){
+        console.log("Fehler! Mindestens 1 und Maximal 5 Sterne Bewertung möglich.");
     }
-    else if (isNaN(input) == true) {
-        // Fehler wenn ein Non-Integer Wert eingegeben wird.
-        console.log(input +"ist keine Zahl!");
+    else if (isNaN(answer) == true){
+        console.log("Fehler! Nur Zahlen von 1 bis 5 sind einzugeben.");
     }
     else{
-        console.log("Ihre Bewertung lautet: ", input); // Input: Eingabe vom Benutzer wird ausgegeben
+        console.log("Ihre eingegebene Bewertung: ", answer); // Ausgabe der eingegebenen Bewertung
     }
-    process.exit(); // Prozess wird beendet
+    rl.close() // beenden
+
 });
-*/
+
 
 // Aufgabe 4
 // n-MAl berechnen + zufällige Bewertung verwenden.
 console.log("");
+console.log("");
 console.log("Aufgabe 4");
 
-var n;
+//var n;
+var min = 1;
+var max = 5;
 
-function random(max_sterne) {
+
+function rand(min, max) {
     // Math.floor() rundet jede Zahl auf die nächstniedrigere ganze Zahl ab.
-    n = Math.floor(Math.random(max_sterne)*Math.floor(max_sterne)) + 1;
-    return n;
+    return n = Math.floor(Math.random() * (max-min +1 )) + min;
 }
 
-console.log("Eine zufällige Bewertung: ", random(max_sterne));
+console.log("Eine zufällige Bewertung: ", rand(min, max));
 console.log("");
 
 
-/*var fak = 0;
-for (i=0; i<=n; i++){
-    fak=fak+i;
+/*var fak = 1;
+for (i=1; i<=n; i++){
+    fak=fak*i;
 }
 
 console.log("");
-console.log("Die Aktuelle Bewertung: ", aktuelle_anzahl_bewertung);
-console.log("Bewertung Gesamt: ", gespeicherte_bewertung);
+console.log("Die aktuelle Anzahl an Bewertung: ", aktuelle_anzahl_bewertung+1);
+console.log("Sterne insgesamt: ", gespeicherte_bewertung);
 console.log("Die berechnete Bewertung: ", fak);
 console.log("");*/
 
 //Augabe 5
 console.log("Aufgabe 5");
-var fak = 0;
+
+// Variablen + Berechnung in einer Funktion
+var fak = 1;
+
 function berechnung(n) {
   for (i=1; i<=n; i++){
-      fak = fak+i;
+      fak = fak*i;
   }
   return fak;
 }
@@ -108,6 +112,43 @@ function berechnung(n) {
 console.log("Die aktuelle Bewertung: ", aktuelle_anzahl_bewertung+1);
 console.log("Die Gesamt Bewertung: ", gespeicherte_bewertung+n);
 console.log("Die berechnete Bewertung: ", berechnung(n));
+console.log("_______________________________________________");
+console.log("");
+
+// AUGABENBLATT 2
+console.log("Aufgabenblatt 2");
+console.log("");
+
+/*
+// Aufgabe 1 - Arrays
+console.log("Aufgabe 1 - Array");
+
+// Array anlegen
+let Array = [name, gespeicherte_bewertung, input];
+
+console.log("Länge des Arrays: ", Array.length);
+console.log("Zueletzt eingetragene Bewertung: ", Array[Array.length -1]);
+console.log("");
+
+
+// Aufgabe 2 - Object
+console.log("Aufgabe 2 - Object");
+
+var ergebnis = parseInt(gespeicherte_bewertung)+parseInt(input);
+var akt_Bewertung = aktuelle_anzahl_bewertung+1;
+
+let ratings = new Object();
+ratings.name="def";
+ratings.letzteBewertung = ergebnis;
+ratings.aktuelleBewertung = akt_Bewertung;
+ratings.durchschnitt = function () {
+    return this.letzteBewertung/this.aktuelleBewertung;
+};*/
+
+
+
+
+
 
 
 
