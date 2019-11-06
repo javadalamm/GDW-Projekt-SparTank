@@ -42,24 +42,3 @@ console.log("Sterne insgesamt:" , gespeicherteBewertungen);
 console.log("");
 
 //Aufgabe 3) Bewertung über die Konsole
-console.log("Aufgabe 3.");
-
-
-let Obst = ["Banana","Apfel","Gurken"];
-
-console.log(Obst.length);
-
-
-
-Obst.push("Tomaten");
-
-
-Obst.forEach(function(item,index, array){
-    console.log(item,index);
-    });
-
-Obst.pop();
-
-Obst.forEach(function(item,index, array){
-    console.log(item,index);
-	});
