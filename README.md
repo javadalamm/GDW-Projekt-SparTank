@@ -5,10 +5,11 @@ GDW_Projekt
 - Aufgabenblatt 1 wurde vollständig hochgeladen
 - Domänenmodell überlegung hochgeladen
 - Projektdokumentation im Wiki
+- Teams wurden eigetragen.
 
 # Muss erledigt werden
 - Lernplan hochladen
-- Aufgabenblatt 2 erledigen 
+- Aufgabenblatt 2 erledigen = wurde angefangen, jedoch fehler enthalten, deshalb auskommentiert
 
 # Deadline Termin 7.11
-- jeder muss ein 3 minuten Video drehen, dies muss bis Mittwoch Abend erfolgen. 
+- jeder muss ein 3 minuten Video drehen, dies muss bis Donnerstag Abend. Bitte im Sciebo hochladen! Link im Wiki
