@@ -1,12 +1,12 @@
 const https = require('https');
 
 
-var TankApiKey = "";
-var GooglApiKey = "";
+var TankApiKey = "0c45231c6-cc80-9af8-213g-e87df42d3946";
+var GooglApiKey = "AIzaSyBA9X-4wsVcV0r3ZAZyK4PVGUtR5kvxAJw";
 
-var lat = "";
-var lng = "";
-var rad = "";
+var lat = "65.9446925";
+var lng = "7.945499";
+var rad = "1.8";
 
 var dlat,dlang;
 
