@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-const ressourceName = "distance";
+const ressourceName = "detail";
 
 
-var tankeapikey = "0c2331c6-cc90-9af8-293e-e87df42d2746";
-var googlapikey = "AIzaSyBA9X-4wsVcV0r3ZAZyK4PVGUtR5kvxAJw";
+var tankeapikey = "";
+var googlapikey = "";
 
 
 
@@ -13,7 +13,8 @@ router.get('/:id,:lat,:lng', function (req, res) {
     var id = req.params.id;
     var lat = req.params.lat;
     var lng = req.params.lng;
-    var url = "https://creativecommons.tankerkoenig.de/json/detail.php?id=" + id + "&apikey=" + tankeapikey;
+    var rad = req.params.rad ;
+    var url = "";
 
 
     const request = require('request');
